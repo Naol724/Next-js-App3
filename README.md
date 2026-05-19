@@ -33,4 +33,50 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+### Steps to Deploy:
+
+1. **Push your code to GitHub** (already done: https://github.com/Naol724/Next-js-App3)
+2. **Go to [Vercel](https://vercel.com)** and sign in with your GitHub account
+3. **Click "Add New..." → "Project"**
+4. **Import your GitHub repository** (Naol724/Next-js-App3)
+5. **Configure Project Settings**:
+   - Framework Preset: Next.js (auto-detected)
+   - Build Command: `npm run build` (default)
+   - Output Directory: `.next` (default)
+   - Install Command: `npm install` (default)
+6. **Click "Deploy"**
+
+### Project Features:
+- ✅ Uses Next.js 16.1.0 with App Router
+- ✅ Tailwind CSS v4 for styling
+- ✅ TypeScript for type safety
+- ✅ Client-side state management with localStorage
+- ✅ Ready for Vercel deployment
+
+### Important Notes:
+- This app uses client-side `localStorage` for data persistence, which means data is stored in the user's browser
+- For production use, consider adding a backend database for persistent data storage
+
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Deployment Checklist
+
+For detailed deployment instructions and checklist, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+## Project Structure
+
+```
+├── app/
+│   ├── layout.tsx          # Root layout with navigation
+│   ├── page.tsx            # Home page
+│   ├── add-student/
+│   │   └── page.tsx        # Add student form
+│   └── view-students/
+│       └── page.tsx        # View students list
+├── public/                 # Static assets
+├── package.json           # Dependencies and scripts
+├── vercel.json           # Vercel deployment config
+├── DEPLOYMENT.md         # Deployment checklist
+└── README.md            # This file
+```
